@@ -1,0 +1,16 @@
+import pandas as pd
+import seaborn as sns
+import matplotlib.pyplot as plt
+
+# Load dataset
+df = pd.read_csv("data.csv")
+
+# Histogram
+sns.histplot(df["Marks"])
+plt.title("Histogram")
+plt.show()
+
+# Boxplot
+sns.boxplot(y=df["Marks"])
+plt.title("Boxplot")
+plt.show()
