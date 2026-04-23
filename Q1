@@ -1,0 +1,15 @@
+import pandas as pd
+import matplotlib.pyplot as plt
+
+# Load dataset
+df = pd.read_csv("data.csv")
+
+# Line plot
+df.plot(kind='line')
+plt.title("Line Plot")
+plt.show()
+
+# Bar plot
+df.plot(kind='bar')
+plt.title("Bar Plot")
+plt.show()
